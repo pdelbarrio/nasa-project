@@ -1,17 +1,21 @@
 import React, {FC} from 'react';
-import {Text, View, StyleSheet, Image, Button} from 'react-native';
+import {Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {PostImage} from '../../types';
 
 const TodaysImage: FC<PostImage> = ({date, title, url}) => {
+  const onPress = () => {};
   return (
     <View style={styles.container}>
       <Image source={{uri: url}} style={styles.image} />
 
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.date}>{date}</Text>
-      <View style={styles.buttonContainer}>
+      {/* <View style={styles.buttonContainer}>
         <Button title="View" />
-      </View>
+      </View> */}
+      <TouchableOpacity onPress={onPress} style={styles.button}>
+        <Text style={styles.textButton}>View</Text>
+      </TouchableOpacity>
     </View>
   );
 };
@@ -44,6 +48,18 @@ const styles = StyleSheet.create({
   },
   buttonContainer: {
     alignItems: 'flex-end',
+  },
+  button: {
+    alignItems: 'flex-end',
+    borderColor: '#fff',
+    color: '#fff',
+    backgroundColor: '#2372bc',
+    borderRadius: 10,
+    padding: 10,
+    alignSelf: 'flex-end',
+  },
+  textButton: {
+    color: '#fff',
   },
 });
 
