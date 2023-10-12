@@ -1,9 +1,9 @@
 # NASA Image Viewer App
 
 
-<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697114684/portfolio/projects/Nasa1_k65ufc.jpg" width="50%" alt="NASA App Main Screen">
+<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697119308/portfolio/projects/Nasa1_jlneqy.png"  alt="NASA App Main Screen">
 
-<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697114684/portfolio/projects/Nasa2_yvlg3i.jpg" width="50%" alt="NASA App Details Screen">
+<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697119311/portfolio/projects/Nasa2_b3xpha.png"  alt="NASA App Details Screen">
 
 
 
