@@ -1,29 +1,16 @@
 import React, {FC} from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
-import {useNavigation} from '@react-navigation/native';
-import {PostImage as PostImageTypes, RootStackParams} from '../../types';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-
-type PostImageNavigationProps = NativeStackNavigationProp<
-  RootStackParams,
-  'Detail'
->;
+import {PostImage as PostImageTypes} from '../../types';
+import {useNavigationPress} from '../../hooks/useNavigationPress';
 
 const PostImage: FC<PostImageTypes> = ({title, date, url, explanation}) => {
-  const {navigate} = useNavigation<PostImageNavigationProps>();
-
-  //TODO: hacer CustomHook reutilizable para postimage y todaysimage
-  const handleViewPress = () => {
-    navigate('Detail', {title, date, url, explanation});
-  };
+  const handleViewPress = useNavigationPress({title, date, url, explanation});
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>{title}</Text>
       <Text style={styles.date}>{date}</Text>
-      {/* <View style={styles.buttonContainer}>
-        <Button title="View" />
-      </View> */}
+
       <TouchableOpacity onPress={handleViewPress} style={styles.button}>
         <Text style={styles.textButton}>View</Text>
       </TouchableOpacity>

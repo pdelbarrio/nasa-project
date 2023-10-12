@@ -35,6 +35,7 @@ const Routes = () => {
               color: '#ffffff',
             },
             headerTitleAlign: 'center',
+            headerTintColor: '#ffffff',
           }}
         />
       </Stack.Navigator>
