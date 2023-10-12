@@ -1,12 +1,5 @@
 # NASA Image Viewer App
 
-
-<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697119308/portfolio/projects/Nasa1_jlneqy.png"  alt="NASA App Main Screen">
-
-<img src="https://res.cloudinary.com/getoutbcn/image/upload/v1697119311/portfolio/projects/Nasa2_b3xpha.png"  alt="NASA App Details Screen">
-
-
-
 ## Description
 The NASA Image Viewer app is a React Native project that allows users to explore NASA's Astronomy Picture of the Day (APOD) and view details of past images. Here are some of the key features and best practices implemented in this app:
 
@@ -25,7 +18,12 @@ The NASA Image Viewer app is a React Native project that allows users to explore
 - Avoiding direct styling in the options of the stack screen by refraining from using routerScreenDefaultOptions, ensuring centered titles and preventing TypeScript issues.
 - Creation of custom hooks for reusability.
 
-Feel free to reach out with any questions about the project to make this README even more comprehensive.
+## Screenshots
+
+| Main screen | Details screen |
+| :---: | :---: |
+| ![Main screen](https://res.cloudinary.com/getoutbcn/image/upload/v1697119308/portfolio/projects/Nasa1_jlneqy.png) | ![Details screen](https://res.cloudinary.com/getoutbcn/image/upload/v1697119311/portfolio/projects/Nasa2_b3xpha.png) |
+
 
 ## Installation
 To get started with the NASA Image Viewer app, follow these steps:
